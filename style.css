@@ -223,6 +223,7 @@ footer span{
     }
     header{
         position: fixed;
+        overflow: hidden;
     }
     header nav{
         display: none;
@@ -254,15 +255,18 @@ footer span{
         display: none;
     }
     main #page-2{
-        margin-top: 5vh;
+        height: 130vh;
+        margin-top: -5vh;
         flex-direction: column;
     }
     main #page-2 .aside{
         width: 80%;
         height: 90%;
+        overflow: hidden;
     }
     main #page-2 .aside h1{
         font-size: 2rem;
+        overflow: hidden;
     }
     main #page-2 .aside h2{
         font-size: 1rem;
@@ -276,7 +280,9 @@ footer span{
         padding: 10px;
     }
     main #page-2 .other-side{
+        overflow: hidden;
         width: 80%;
+        margin-top: -20vh;
     }
     main #page-2 .other-side img{
         width: 60vw;
@@ -298,10 +304,12 @@ footer span{
         height: 50vh;
     }
     main #page-3 .moodboard-title h1{
-        font-size: 1rem;
+        font-size: 5vw;
         max-width: 100%;
+        overflow: hidden;
     }
     main #page-3 .moodboard img{
+        overflow: hidden;
         width: 25vw;
         border-radius: 3px;
         filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.096));
