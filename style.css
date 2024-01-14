@@ -41,19 +41,6 @@ header nav a{
 header nav a:hover{
     filter: drop-shadow(0 0 0.75rem rgba(241, 241, 241, 0.897));
 }
-main #page-moba{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: aliceblue;
-}
-main #page-moba h1{
-    font-family: 'Jost', sans-serif;
-    filter: drop-shadow(0 0 0.75rem rgba(235, 235, 235, 0.315));
-    font-size: 3rem;
-}
 main #page-1{
     width: 100%;
     height: 100vh;
@@ -229,15 +216,34 @@ footer span{
 
 @media only screen and (max-width: 600px) {
     *{
-        overflow-x: none;
+        overflow-x: hidden;
+    }
+    header{
+        position: fixed;
     }
     header nav{
         display: none;
     }
-    main #page-1 .main-container {
+    main #page-1 .main-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end; 
+        border: 0px;
+        border-radius: 0px;
+    }
+    main #page-1 .main-container img{
+        width: 90vw;
+        position: relative;
+        margin-bottom: 0;
+    }
+    main #page-1 .main-container h1{
         display: none;
     }
     main #page-2{
+        margin-top: 5vh;
         flex-direction: column;
     }
     main #page-2 .aside{
@@ -275,5 +281,38 @@ footer span{
         font-size: .7rem;
         padding: 10px 0 10px 0;
         max-width: 90%;
+    }
+    main #page-3{
+        width: 100%;
+        height: 50vh;
+    }
+    main #page-3 .moodboard-title h1{
+        font-size: 1rem;
+        max-width: 100%;
+    }
+    main #page-3 .moodboard img{
+        width: 25vw;
+        border-radius: 3px;
+        filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.096));
+        margin: 1px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    main #page-4{
+        height: 70vh;
+    }
+    main #page-4 h1{
+        font-size: 10vw;
+        width: auto;
+    }
+    main #page-4 p{
+        font-size: 4vw;
+        margin-top: 5vh;
+    }
+    main #page-5 img{
+        width: 10%;
+        margin: 0 0 0 10vw;
+    }
+    footer span{
+        font-size: .5rem;
     }
 }
