@@ -111,9 +111,16 @@ main #page-2 .aside h2{
     color: rgb(0, 153, 255);
     filter: drop-shadow(0 0 0.75rem rgba(255, 255, 255, 0.329));
 }
-main #page-2 .aside span{
+main #page-2 .aside a{
     border: 1px solid white;
     padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+main #page-2 .aside a:hover{
+    background-color: white;
+    color: rgb(25, 25, 25);
+    transform: scale(10px);
 }
 main #page-2 .other-side{
     width: 30%;
@@ -225,26 +232,32 @@ footer span{
         position: fixed;
         overflow: hidden;
     }
-    header nav{
+    header nav .none{
         display: none;
+    }
+    header nav{
+        overflow: hidden;
+    }
+    header nav a{
+        font-size: 3vw;
+        overflow: hidden;
+        margin-right: 30vw;
+        overflow: hidden;
+    }
+    header .header-icon img{
+        width: 30%; 
+    }
+    main #page-1{
+        height: 70vh;
     }
     main #page-1 .main-container{
         width: 100%;
-        height: 80vh;
-        margin-top: -20vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end; 
         border: 0px;
         border-radius: 0px;
-    }
-    main #page-1 .main-container h3{
-        display: contents;
-        font-size: 20vw;
-        color: rgb(255, 255, 255);
-        filter: drop-shadow(0 0 0.75rem rgba(235, 235, 235, 0.144));
-        font-family: 'Jost', sans-serif;
     }
     main #page-1 .main-container img{
         width: 90vw;
@@ -255,8 +268,8 @@ footer span{
         display: none;
     }
     main #page-2{
-        height: 130vh;
-        margin-top: -5vh;
+        height: 100vh;
+        margin-top: 3vh;
         flex-direction: column;
     }
     main #page-2 .aside{
@@ -265,8 +278,9 @@ footer span{
         overflow: hidden;
     }
     main #page-2 .aside h1{
-        font-size: 2rem;
+        font-size:8vw;
         overflow: hidden;
+        width: 100vw;
     }
     main #page-2 .aside h2{
         font-size: 1rem;
@@ -275,14 +289,15 @@ footer span{
         font-size: .7rem;
         padding: 10px 0 10px 0;
     }
-    main #page-2 .aside span{
+    main #page-2 .aside a{
+        font-size: 4vw;
         border: 1px solid white;
         padding: 10px;
     }
     main #page-2 .other-side{
         overflow: hidden;
         width: 80%;
-        margin-top: -20vh;
+        margin-top: -10vh;
     }
     main #page-2 .other-side img{
         width: 60vw;
@@ -317,7 +332,7 @@ footer span{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
     main #page-4{
-        height: 70vh;
+        height: 80vh;
     }
     main #page-4 h1{
         font-size: 10vw;
@@ -326,6 +341,15 @@ footer span{
     main #page-4 p{
         font-size: 4vw;
         margin-top: 5vh;
+    }
+    main #page-5{
+        overflow: hidden;
+    }
+    main #page-5 h1{
+        overflow: hidden;
+    }
+    main #page-5 p{
+        overflow: hidden;
     }
     main #page-5 img{
         width: 10%;
